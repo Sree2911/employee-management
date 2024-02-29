@@ -22,6 +22,7 @@ public class EmployeeController {
 
     @GetMapping("/{id}")
     public Optional<EmployeeEntity> findEmployeeById(@PathVariable("id")Long id){
+        // Return fetched employee
         return employeeService.findById(id);
     }
 
